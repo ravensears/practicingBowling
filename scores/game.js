@@ -1,13 +1,13 @@
 class ScoreCard {
-    constructor(currentScore = 0) {
-        this.currentScore = currentScore;
+    constructor() {
+        this.currentScore = 0;
     }
     currentScore() {
         return this.currentScore;
     }
     
-    frame() {
-        
+    addRoll(points) {
+        this.firstRoll ? (this.secondRoll = points) : (this.firstRoll = points);
     }
 }
 

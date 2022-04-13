@@ -4,6 +4,16 @@ describe('Score', () => {
     const scoreCard = new ScoreCard;
 
     it('gives you an empty score card', () => {
-        expect(scoreCard.currentScore).toEqual (0);
-    })
+        expect(scoreCard.currentScore).toEqual(0);
+    });
+
+    it('adds roll points', () => {
+        scoreCard.addRoll(10);
+        expect(scoreCard.firstRoll).toEqual(10);
+    });
+
+    it('addes second roll points', () => {
+        scoreCard.addRoll(2);
+        expect(scoreCard.secondRoll).toEqual(2);
+    });
 });
