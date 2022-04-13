@@ -4,16 +4,16 @@
   "description": "practicing js",
   "main": "index.js",
   "scripts": {
-    "test": "vows --spec"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "keywords": [],
   "dependencies": {
-    "jest": "^27.5.1",
     "jquery": "^3.6.0"
   },
   "devDependencies": {
-    "eslint": "^8.13.0"
+    "eslint": "^8.13.0",
+    "jest": "^27.5.1"
   }
 }
